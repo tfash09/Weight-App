@@ -1,7 +1,7 @@
 @import '../../styles/scss/variables';
 
 .appbar{
-    background-color: $background-color;
+    background-color: $background-color !important;
     color: lighten($text-color, 50%);
     padding: 8px;
     -webkit-box-shadow: 0px -4px 3px #eee;

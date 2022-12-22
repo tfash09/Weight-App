@@ -1,7 +1,7 @@
 @import '../../styles/scss/variables';
 
 .appbar{
-    background-color: $background-color;
+    background-color: $background-color !important;
     padding-top: 40px;
 }
 
