@@ -95,20 +95,20 @@ export default function BottomAppBar() {
       </Paper> */}
       <AppBar position="fixed" elevation={0} sx={{ top: 'auto', bottom: 0 }} className={styles.appbar}>
         <Toolbar className={styles.toolbar}>
-          <IconButton style={{color: currentLocation === "/" ? "#7B66FF" : "inherit"}} aria-label="open drawer" onClick={() => navigateTo('/')}>
+          <IconButton style={{color: currentLocation === "/" ? "#7B66FF" : "#888"}} aria-label="open drawer" onClick={() => navigateTo('/')}>
             <HomeIcon />
           </IconButton>
-          <IconButton style={{color: currentLocation === "/history" ? "#7B66FF" : "inherit"}} aria-label="open drawer" onClick={() => navigateTo('/history')}>
+          <IconButton style={{color: currentLocation === "/history" ? "#7B66FF" : "#888"}} aria-label="open drawer" onClick={() => navigateTo('/history')}>
             <BarChartIcon />
           </IconButton>
           <StyledFab aria-label="add" aria-describedby={id} variant="contained" onClick={handleClick} className={styles.fabbutton}>
             <AddIcon />
           </StyledFab>
           <Box sx={{ flexGrow: 1 }} />
-          <IconButton color="inherit">
+          <IconButton color="#888">
             <ChatBubbleOutlineIcon />
           </IconButton>
-          <IconButton color="inherit">
+          <IconButton color="#888">
             <PersonOutlineIcon />
           </IconButton>
         </Toolbar>
