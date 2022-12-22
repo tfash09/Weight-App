@@ -30,7 +30,7 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton>
-                <Avatar alt="Remy Sharp" src={image} />
+                <Avatar alt="Remy Sharp" src={image} sx={{ width: 50, height: 50 }} />
               </IconButton>
             </Tooltip>
           </Box>

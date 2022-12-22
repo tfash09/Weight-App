@@ -1,0 +1,50 @@
+.cardContainer{
+    padding: 10px;
+    width: auto;
+    height: 150px;
+    display: flex;
+    // flex-wrap: no-wrap;
+    overflow-x: scroll;
+}
+
+.card{
+    width: 45%;
+    height: 85px;
+    margin: 10px;
+    padding: 8px;
+    -webkit-box-shadow:  2px 2px 2px 3px #eee;
+    -moz-box-shadow:  2px 2px 2px 2px #eee;
+    box-shadow: 2px 2px 2px 3px #eee;
+    border-radius: 10px;
+    flex: 0 0 auto;
+    display: flex;
+}
+
+.icon{
+    vertical-align: middle;
+    height: 100%;
+    width: 30px;
+    margin: 0 5px;
+}
+.details{
+    width: 70%;
+    padding: 4px;
+}
+.details p{
+    font-size: 12px;
+    font-weight: 200;
+    margin-top: -3px;
+    margin-bottom: 5px;
+}
+
+.details h3 span{
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.progress{
+    height: 7px;
+    border-radius: 10px;
+    color: #C3FF4D;
+    background-color: #eee;
+}
