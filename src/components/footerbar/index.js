@@ -4,9 +4,7 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
 import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
-import Paper from '@mui/material/Paper';
 import Fab from '@mui/material/Fab';
 import AddIcon from '@mui/icons-material/Add';
 import HomeIcon from '@mui/icons-material/Home';
@@ -97,10 +95,10 @@ export default function BottomAppBar() {
       </Paper> */}
       <AppBar position="fixed" elevation={0} sx={{ top: 'auto', bottom: 0 }} className={styles.appbar}>
         <Toolbar className={styles.toolbar}>
-          <IconButton style={{color: currentLocation == "/" ? "#7B66FF" : "inherit"}} aria-label="open drawer" onClick={() => navigateTo('/')}>
+          <IconButton style={{color: currentLocation === "/" ? "#7B66FF" : "inherit"}} aria-label="open drawer" onClick={() => navigateTo('/')}>
             <HomeIcon />
           </IconButton>
-          <IconButton style={{color: currentLocation == "/history" ? "#7B66FF" : "inherit"}} aria-label="open drawer" onClick={() => navigateTo('/history')}>
+          <IconButton style={{color: currentLocation === "/history" ? "#7B66FF" : "inherit"}} aria-label="open drawer" onClick={() => navigateTo('/history')}>
             <BarChartIcon />
           </IconButton>
           <StyledFab aria-label="add" aria-describedby={id} variant="contained" onClick={handleClick} className={styles.fabbutton}>
