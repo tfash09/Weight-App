@@ -1,19 +1,23 @@
 import React, { lazy, Suspense } from 'react';
-import { Route, Switch, Redirect } from 'react-router-dom';
-
+import {
+    BrowserRouter,
+    Routes,
+    Route,
+  } from 'react-router-dom';
 import CircularProgress from '@mui/material/CircularProgress';
 
 const HomePage = lazy(() => import('../webpages/homepage'));
 const HistoryPage = lazy(() => import('../webpages/history'));
 
-
-let routes = (
+export default function Index() {
+    return (
     <Suspense fallback={<CircularProgress color='secondary' />}>
-        <Switch>
-            <Route exact path= '/' component={HomePage} />
-            <Route path='/history' component={HistoryPage} />
-        </Switch>
+            <BrowserRouter>
+                <Routes>
+                    <Route exact path= '/' element={<HomePage  />} />
+                    <Route path='/history' element={<HistoryPage />} />
+                </Routes>
+             </BrowserRouter>
     </Suspense>
 );
-
-export default routes;
+}

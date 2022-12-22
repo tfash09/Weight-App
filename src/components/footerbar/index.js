@@ -13,7 +13,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import BarChartIcon from '@mui/icons-material/BarChart';
 import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
-import { useHistory } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 import styles from './footbar.module.scss'
 
@@ -31,7 +31,7 @@ const StyledFab = styled(Fab)({
 
 export default function BottomAppBar() {
 
-    let navigate = useHistory();
+    const navigateTo = useNavigate();
 
   return (
     <React.Fragment>
@@ -42,10 +42,10 @@ export default function BottomAppBar() {
       </Paper> */}
       <AppBar position="fixed" elevation={0} sx={{ top: 'auto', bottom: 0 }} className={styles.appbar}>
         <Toolbar className={styles.toolbar}>
-          <IconButton color="inherit" aria-label="open drawer" onClick={() => navigate.push('/')}>
+          <IconButton color="inherit" aria-label="open drawer" onClick={() => navigateTo('/')}>
             <HomeIcon />
           </IconButton>
-          <IconButton color="inherit" aria-label="open drawer" onClick={() => navigate.push('/history')}>
+          <IconButton color="inherit" aria-label="open drawer" onClick={() => navigateTo('/history')}>
             <BarChartIcon />
           </IconButton>
           <StyledFab aria-label="add" onClick={() =>alert('hello')} className={styles.fabbutton}>

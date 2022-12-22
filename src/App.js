@@ -2,15 +2,15 @@ import React from 'react'
 import { withRouter } from 'react-router-dom'
 import CssBaseline from "@mui/material/CssBaseline";
 
-import routes from './routes';
+import Routes from './routes';
 
 function App() {
   return (
     <div>
       <CssBaseline />
-      {routes}
+      <Routes />
     </div>
   );
 }
 
-export default withRouter(App);
+export default App;
