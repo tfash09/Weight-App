@@ -1,9 +1,18 @@
 @import '../../styles/scss/variables';
 
-.title{
-    color: $text-color !important;
+.appbar{
+    background-color: $background-color;
+    padding-top: 60px;
 }
 
-.navbardefault{
-    background-color: red !important;
+.toolbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title{
+    color: $text-color !important;
+    font-weight: 700;
+    font-size: 21px;
+    letter-spacing: 0px;
 }

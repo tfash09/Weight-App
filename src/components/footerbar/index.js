@@ -8,21 +8,14 @@ import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import Paper from '@mui/material/Paper';
 import Fab from '@mui/material/Fab';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemAvatar from '@mui/material/ListItemAvatar';
-import ListItemText from '@mui/material/ListItemText';
-import ListSubheader from '@mui/material/ListSubheader';
-import Avatar from '@mui/material/Avatar';
-import MenuIcon from '@mui/icons-material/Menu';
 import AddIcon from '@mui/icons-material/Add';
-import SearchIcon from '@mui/icons-material/Search';
-import MoreIcon from '@mui/icons-material/MoreVert';
 import HomeIcon from '@mui/icons-material/Home';
 import BarChartIcon from '@mui/icons-material/BarChart';
 import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
-import PersonIcon from '@mui/icons-material/Person';
+import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import { useHistory } from "react-router-dom";
+
+import styles from './footbar.module.scss'
 
 
 
@@ -43,21 +36,19 @@ export default function BottomAppBar() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Paper square sx={{ pb: '50px' }}>
-        <Typography variant="h5" gutterBottom component="div" sx={{ p: 2, pb: 0 }}>
-          Inbox
-        </Typography>
+      {/* <Paper square sx={{ pb: '50px' }}>
 
-      </Paper>
-      <AppBar position="fixed" color="primary" sx={{ top: 'auto', bottom: 0 }}>
-        <Toolbar>
+
+      </Paper> */}
+      <AppBar position="fixed" elevation={0} sx={{ top: 'auto', bottom: 0 }} className={styles.appbar}>
+        <Toolbar className={styles.toolbar}>
           <IconButton color="inherit" aria-label="open drawer" onClick={() => navigate.push('/')}>
             <HomeIcon />
           </IconButton>
           <IconButton color="inherit" aria-label="open drawer" onClick={() => navigate.push('/history')}>
             <BarChartIcon />
           </IconButton>
-          <StyledFab color="secondary" aria-label="add" onClick={() =>alert('hello')}>
+          <StyledFab aria-label="add" onClick={() =>alert('hello')} className={styles.fabbutton}>
             <AddIcon />
           </StyledFab>
           <Box sx={{ flexGrow: 1 }} />
@@ -65,7 +56,7 @@ export default function BottomAppBar() {
             <ChatBubbleOutlineIcon />
           </IconButton>
           <IconButton color="inherit">
-            <PersonIcon />
+            <PersonOutlineIcon />
           </IconButton>
         </Toolbar>
       </AppBar>

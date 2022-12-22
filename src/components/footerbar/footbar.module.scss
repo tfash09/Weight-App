@@ -1,0 +1,20 @@
+@import '../../styles/scss/variables';
+
+.appbar{
+    background-color: $background-color;
+    color: lighten($text-color, 50%);
+}
+
+.toolbar{
+    display: flex;
+    justify-content: space-around;
+
+    button:first-child, button:nth-of-type(4) {
+        padding-right: 30px;
+    }
+}
+
+.fabbutton{
+    background-color: $primary-color;
+    color: $white;
+}
