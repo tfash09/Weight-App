@@ -25,9 +25,9 @@ export default class HistoryWeightChart extends PureComponent{
                         data={data}
                         margin={{
                         top: 10,
-                        right: 30,
-                        left: 30,
-                        bottom: 0,
+                        right: 10,
+                        left: 60,
+                        bottom: 15,
                         }}
                     >
                         <XAxis dataKey="day" />
