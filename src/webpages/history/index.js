@@ -12,7 +12,7 @@ import Grid from '@mui/material/Grid';
 
 import HistoryWeight from '../../components/historyWeight'
 import HistoryBMI from '../../components/historyBMI';
-
+import HistorySleep from '../../components/historySleep';
 
 
 export default function History(){
@@ -39,7 +39,7 @@ export default function History(){
                 </Container>
             </AppBar>
 
-            <Container maxWidth="sm">
+            <Container maxWidth="sm" className={styles.wrapper}>
                 <Grid container spacing={2}>
                     <Grid item xs={12}>
                         <div className={styles.date}>
@@ -51,6 +51,8 @@ export default function History(){
                 <HistoryWeight />
 
                 <HistoryBMI />
+
+                <HistorySleep />
 
             </Container>
 

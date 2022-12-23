@@ -2,7 +2,7 @@
 
 .appbar{
     background-color: $background-color;
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
 .toolbar{
@@ -29,4 +29,8 @@
         font-weight: 600;
         font-size: 16px;
     }
+}
+
+.wrapper{
+    padding-bottom: 100px;
 }

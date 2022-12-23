@@ -13,6 +13,13 @@
     align-items: center;
     margin-bottom: 10px;
 
+    
+    h5{
+        font-size: 12px;
+        font-weight: lighter;
+        color: darken($text-color, 100%);
+    }
+
     .figure{
         display: flex;
         justify-content: space-between;

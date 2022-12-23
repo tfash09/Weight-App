@@ -8,17 +8,19 @@ import Grid from '@mui/material/Grid';
 
 import styles from './index.module.scss'
 
-import HistoryWeightChart from '../historyWeightChart';
+import HistorySleepChart from '../historySleepChart';
 
-export default function HistoryWeight(){
+
+export default function HistorySleep(){
+
     return(
         <>
-        <Card id='weight-chart' className={styles.weightchart}>
+        <Card id='weight-chart' className={styles.sleepchart}>
             <CardContent>
                 <Grid container spacing={2}>
                     <Grid item xs={12}>
                         <div className={styles.title}>
-                            <h5>Weight</h5>
+                            <h5>Sleep</h5>
                         </div>
                     </Grid>
                 </Grid>
@@ -26,17 +28,16 @@ export default function HistoryWeight(){
                 <Grid container spacing={2}>
                     <Grid item xs={2}>
                         <div className={styles.data}>
-                            <h3>52,3<span>kg</span></h3>
+                            <h3>6<span>h</span><span></span>20<span>m</span></h3>
                         </div>
                     </Grid>
 
                     <Grid item xs={10} className={styles.chart}>
-                        <HistoryWeightChart />
+                        <HistorySleepChart />
                     </Grid>
                 </Grid>
             </CardContent>
         </Card>
-
         </>
     )
 }
