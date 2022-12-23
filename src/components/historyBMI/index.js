@@ -9,6 +9,7 @@ import Grid from '@mui/material/Grid';
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 import styles from './index.module.scss'
 import LinearProgress from '@mui/material/LinearProgress';
+import CircleIcon from '@mui/icons-material/Circle';
 
 
 export default function HistoryBMI(){
@@ -44,6 +45,22 @@ export default function HistoryBMI(){
                         <Box style={{ width: '100%', mr: 1 }}>
                             <LinearProgress variant="determinate" color="inherit" value={0} className={styles.progress} />
                         </Box>
+                    </Grid>
+                </Grid>
+
+                <Grid container spacing={2}>
+                    <Grid item xs={6}>
+                        <div className={styles.options}>
+                            <div className={styles.option1}>
+                                <CircleIcon /> <span>Low</span>
+                            </div>
+                            <div className={styles.option2}>
+                                <CircleIcon /> <span>Normal</span>
+                            </div>
+                            <div className={styles.option3}>
+                                <CircleIcon /> <span>Hight</span>
+                            </div>
+                        </div>
                     </Grid>
                 </Grid>
             </CardContent>

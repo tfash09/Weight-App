@@ -33,3 +33,37 @@
     color: lighten($text-color, 0%);
     font-weight: lighter;
 }
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+
+    svg{
+        font-size: 8px;
+    }
+
+    span{
+        font-size: 12px;
+        font-weight: lighter;
+        color: $text-color;
+    }
+
+    .option1{
+        svg{
+            fill: $secondary-color
+        }
+    }
+
+    .option2{
+        svg{
+            fill: lighten($primary-color, 20%)
+        }
+    }
+
+    .option3{
+        svg{
+            fill: $primary-color
+        }
+    }
+}
