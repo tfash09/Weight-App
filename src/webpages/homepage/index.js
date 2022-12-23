@@ -10,14 +10,16 @@ export default function Homepage() {
     
     return (
         <div>
-            <ResponsiveAppBar />
+            <div style={{height: "900px"}}>
+                <ResponsiveAppBar />
 
-            <CardList />
+                <CardList />
 
-            <Chart />
+                <Chart />
 
-            <Trending />
+                <Trending />
 
+            </div>
             <BottomAppBar />
         </div>        
     )

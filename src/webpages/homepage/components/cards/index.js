@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './cards.module.scss';
-import HomeIcon from '@mui/icons-material/Home';
 import LinearProgress from '@mui/material/LinearProgress';
 import Box from '@mui/material/Box';
 import WatchIcon from '@mui/icons-material/Watch';
