@@ -1,1 +1,39 @@
 @import '../../styles/scss/variables';
+
+.weightchart{
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 3px #eee;
+    height: 150px
+}
+.title{
+
+    margin-bottom: 20px;
+
+    h5{
+        font-size: 12px;
+        font-weight: lighter;
+        color: darken($text-color, 100%);
+    }
+}
+
+.data{
+
+    // margin-right: 20px;
+
+    h3{
+        font-size: 24px;
+        font-weight: 900;
+        color: darken($text-color, 100%);
+    }
+
+    span{
+        font-size: 12px;
+        font-weight: lighter;
+        color: lighten($text-color, 50%);
+    }
+}
+
+.chart{
+    // margin-left: 20px !important;
+}

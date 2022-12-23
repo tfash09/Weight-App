@@ -1,0 +1,35 @@
+@import '../../styles/scss/variables';
+
+.weightbmi{
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 3px #eee;
+    height: 150px
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+    .figure{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.progress{
+    height: 7px;
+    border-radius: 10px;
+    color: #C3FF4D;
+    background-color: #eee;
+}
+
+.data{
+    font-size: 10px;
+    text-align: right;
+    margin-top: 8px;
+    color: lighten($text-color, 0%);
+    font-weight: lighter;
+}

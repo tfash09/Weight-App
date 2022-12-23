@@ -54,3 +54,15 @@ a {
 ::-webkit-scrollbar-thumb:hover {
     background: #555; 
 }
+
+#weight-chart .recharts-cartesian-axis-line{
+    display: none;
+}
+
+#weight-chart .recharts-cartesian-axis-tick-line{
+    display: none;
+}
+
+#weight-chart .recharts-text.recharts-cartesian-axis-tick-value tspan{
+    color: lighten($text-color, 80%) !important;
+}

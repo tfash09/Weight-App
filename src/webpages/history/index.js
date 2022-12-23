@@ -14,6 +14,7 @@ import BottomAppBar from '../../components/footerbar';
 import Grid from '@mui/material/Grid';
 
 import HistoryWeight from '../../components/historyWeight'
+import HistoryBMI from '../../components/historyBMI';
 
 
 
@@ -51,6 +52,8 @@ export default function History(){
                 </Grid>
 
                 <HistoryWeight />
+
+                <HistoryBMI />
 
             </Container>
 
