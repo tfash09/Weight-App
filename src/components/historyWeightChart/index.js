@@ -32,7 +32,7 @@ export default class HistoryWeightChart extends PureComponent{
                     >
                         <XAxis dataKey="day" />
                         <Tooltip />
-                        <Line type="monotone" dataKey="weight" stroke="#7B66FF" fill="#7B66FF" />
+                        <Line type="monotone" dataKey="weight" stroke="#c3fe4d" fill="#7B66FF" />
                     </LineChart>
                 </ResponsiveContainer>
             </div>

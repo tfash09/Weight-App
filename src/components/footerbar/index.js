@@ -59,10 +59,11 @@ export default function BottomAppBar() {
         anchorEl={anchorEl}
         onClose={handleClose}
         anchorOrigin={{
-          vertical: 'top',
+          vertical: 'bottom',
           horizontal: 'center',
         }}
-        style={{position: "static", marginTop: "100%"}}
+        className={styles.popoverDiv}
+        // style={{position: "static", marginTop: "100%"}}
       >
         <div className={styles.modalContainer}>
             <div className={styles.card}>

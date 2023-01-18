@@ -22,7 +22,7 @@ export default function HistorySleep(){
                     </Grid>
                 </Grid>
 
-                <Grid container spacing={2}>
+                <Grid container spacing={2} style={{height: "300px"}}>
                     <Grid item xs={2}>
                         <div className={styles.data}>
                             <h3>6<span>h</span><span></span>20<span>m</span></h3>

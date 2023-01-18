@@ -37,10 +37,10 @@ const data = [
   export default class Example extends PureComponent {
     render() {
         return (
-            <ResponsiveContainer width="100%" height={100}>
+            <ResponsiveContainer width="100%" height={158}>
             <BarChart
                 width={400}
-                height={200}
+                height={400}
                 data={data}
                 margin={{
                 top: 10,
@@ -51,7 +51,7 @@ const data = [
             >
               <XAxis dataKey="day" />
               <Tooltip />
-              <Bar dataKey="time" fill="#8884d8" />
+              <Bar dataKey="time" fill="#8884d8" radius={[8, 8, 8, 8]}/>
             </BarChart>
           </ResponsiveContainer>
         );

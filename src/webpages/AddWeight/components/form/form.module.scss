@@ -2,10 +2,95 @@
 
 .container{
     padding: 10px;
-    margin-top: 10px;
+    margin-top: 15%;
     width: 100%;
 }
 
 .showWeight{
-    padding: 10px;
+	border-top: 120px solid #7B66FF;
+	border-left: 17px solid transparent;
+	border-right: 17px solid transparent;
+	height: 0px;
+	width: 170px;
+    margin: 10px auto;
+    border-radius: 15px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-bottom: 12px;
+}
+
+.showWeight h3{
+    margin-top: -80px;
+    text-align: center;
+    color: white;
+    font-size: 36px;
+}
+
+.slider{
+    width: 80%;
+    margin: 50px auto;
+}
+
+.radioClass, .otherDetails{
+    display: flex;
+    width: 100%;
+    margin: 30px 10%;
+}
+
+.item, .radioClass div{
+    width: 38%;
+    padding: 5% 10%;
+    margin-right: 5%;
+    -webkit-box-shadow:  2px 2px 2px 3px #eee;
+    -moz-box-shadow:  2px 2px 2px 2px #eee;
+    box-shadow: 2px 2px 2px 3px #eee;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.activeGender{
+    border: 1px solid $secondary-color;
+    box-shadow: 0px 0px 0px 0px white !important;
+}
+
+.otherDetails{
+    height: 120px;
+}
+
+.otherDetails .item{
+    padding: 10px !important;
+}
+
+.otherDetails .details{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #A0A0A0;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.item h2{
+    font-size: 34px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.saveButton{
+    width: 70%;
+    margin: 20px auto;
+    margin-top: 50px;
+}
+
+.saveButton button{
+    width: 100%;
+    background-color: #7B66FF;
+    border-color: #7B66FF;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.saveButton button:active, .saveButton button:hover, .saveButton button:visited{
+    background-color: #7B66FF;
+    border-color: #7B66FF;
 }
